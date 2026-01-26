@@ -74,6 +74,7 @@ cleanup_working_dir(#{cassone_dir := CassoneDir, escript_name := EscriptName}) -
 assemble_target({OS, Arch}, Options) ->
     OtpVersion = otp_version(),
     TargetOTPDir = cassone_erts:fetch(OtpVersion, OS, Arch),
+    MuslcRuntime = cassone_musl:fetch(OS,Arch),
     {PiadinaPath, AzdoraPath} = cassone_piadina:fetch(OS, Arch),
     copy_released_files(Options),
     copy_erts_and_libs(TargetOTPDir, Options),
