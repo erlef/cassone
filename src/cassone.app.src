@@ -3,7 +3,7 @@
 
 {application, cassone, [
     {description, "Rebar3 plugin to package Erlang escripts and releases in standalone executables"},
-    {vsn, "0.1.0"},
+    {vsn, "0.1.1"},
     {registered, []},
     {applications, [
         kernel,
