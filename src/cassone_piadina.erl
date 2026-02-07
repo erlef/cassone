@@ -3,7 +3,7 @@
 -export([fetch_piadina/2, fetch_azdora/2]).
 
 -define(url_template,
-"https://github.com/stritzinger/piadina/releases/download/{V}/{PROG}-{OS}-{ARCH}").
+"https://github.com/erlef/piadina/releases/download/{V}/{PROG}-{OS}-{ARCH}").
 
 -spec fetch_piadina(OS :: cassone:os(), Arch :: cassone:arch()) -> string().
 fetch_piadina(OS, Arch) ->
@@ -18,7 +18,7 @@ fetch_azdora(OS, Arch) ->
 make_url(Prog, OS, Arch) ->
     Replacements = [
         {"{PROG}", Prog},
-        {"{V}", "1.0.0"},
+        {"{V}", "0.1.0"},
         {"{OS}", atom_to_list(OS)},
         {"{ARCH}", arch_to_string(Arch)}
     ],

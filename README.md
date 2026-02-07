@@ -15,7 +15,7 @@ Add the plugin to your rebar config:
 
 ```erlang
     {plugins, [
-        {cassone, {git, "https://github.com/stritzinger/cassone.git", {branch, "main"}}}
+        cassone
     ]}.
 ```
 
