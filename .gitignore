@@ -22,6 +22,7 @@ logs
 *.iml
 rebar3.crashdump
 *~
+/doc
 
 # Devenv
 .devenv*
