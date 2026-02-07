@@ -6,7 +6,7 @@
 -export([fetch_piadina/2, fetch_azdora/2]).
 
 -define(url_template,
-"https://github.com/erlef/piadina/releases/download/{V}/{PROG}-{OS}-{ARCH}").
+"https://github.com/erlef/piadina/releases/download/v{V}/{PROG}-{OS}-{ARCH}").
 
 -spec fetch_piadina(OS :: cassone:os(), Arch :: cassone:arch()) -> string().
 fetch_piadina(OS, Arch) ->
