@@ -2,7 +2,7 @@
 %% SPDX-FileCopyrightText: 2025 Stritzinger GmbH
 
 {application, cassone, [
-    {description, "A rebar plugin"},
+    {description, "Rebar3 plugin to package Erlang escripts and releases in standalone executables"},
     {vsn, "0.1.0"},
     {registered, []},
     {applications, [
