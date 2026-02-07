@@ -1,3 +1,6 @@
+%% SPDX-License-Identifier: Apache-2.0
+%% SPDX-FileCopyrightText: 2025 Stritzinger GmbH
+
 -module(cassone).
 
 -export([init/1]).
